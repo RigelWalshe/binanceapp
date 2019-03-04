@@ -1,0 +1,191 @@
+<!-- <style>
+table {
+font-family: arial, sans-serif;
+border-collapse: collapse;
+text-align: center;
+width: 100%;
+}
+td, th {
+border: 0px solid #dddddd;
+text-align: center;
+font-size:70%;
+padding: 0px;
+}
+tr:nth-child(even) {
+background-color: #dddddd;
+text-align: center;
+}
+</style>
+ -->
+
+
+
+
+
+
+<script src="https://unpkg.com/react/umd/react.production.js" crossorigin />
+
+<script
+  src="https://unpkg.com/react-dom/umd/react-dom.production.js"
+  crossorigin
+/>
+
+<script
+  src="https://unpkg.com/react-bootstrap@next/dist/react-bootstrap.min.js"
+  crossorigin
+/>
+
+<script>var Alert = ReactBootstrap.Alert;</script>
+
+
+<link
+  rel="stylesheet"
+  href="https://maxcdn.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
+  integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS"
+  crossorigin="anonymous"
+/>
+
+
+
+<meta charset="UTF-8">
+<title>Binance data</title>
+<!-- <table id="Binance" style="width:200%"><tbody><tr> -->
+
+<Table striped bordered hover variant="dark">
+  <thead>
+    <tr>
+    	<th width="2%">ADA</th>
+        <th width="2%">AGI</th>
+        <th width="2%">ARDR</th>
+        <th width="2%">ARK</th>
+        <th width="2%">AST</th>
+        <th width="2%">BAT</th>
+        <th width="2%">BCHABC</th>
+        <th width="2%">BCHSV</th>
+        <th width="2%">BNB</th>
+        <th width="2%">BLZ</th>
+        <th width="2%">BTT</th>
+        <th width="2%">BTS</th>
+        <th width="2%">CND</th>
+        <th width="2%">DCR</th>
+        <th width="2%">EOS</th>
+        <th width="2%">ETH</th>
+        <th width="2%">GVT</th>
+        <th width="2%">IOTA</th>
+        <th width="2%">KNC</th>
+        <th width="2%">KMD</th>
+        <th width="2%">LTC</th>
+        <th width="2%">MANA</th>
+        <th width="2%">NANO</th>
+        <th width="2%">NAV</th>
+        <th width="2%">NEO</th>
+        <th width="2%">POLY</th>
+        <th width="2%">QTUM</th>
+        <th width="2%">RLC</th>
+        <th width="2%">RVN</th>
+        <th width="2%">SC</th>
+        <th width="2%">SNT</th>
+        <th width="2%">STRAT</th>
+        <th width="2%">TRX</th>
+        <th width="2%">WAVES</th>
+        <th width="2%">XLM</th>
+        <th width="2%">XMR</th>
+        <th width="2%">XRP</th>
+        <th width="2%">XVG</th>
+        <th width="2%">ZRX</th>
+        <th width="2%">XZC</th>
+        <th width="5%">TIME</th>
+    </tr>
+
+{% if result %}
+
+
+{% for row in result %}
+
+<!-- </thead>
+  <tbody>
+    <tr>
+<table id="Binance" style="width:200%"><tbody><tr>
+</tr><tr> -->
+
+</thead>
+  <tbody>
+    <tr>
+    <th width="2%"> {{ row.ADA }} </td>
+    <th width="2%"> {{ row.AGI }} </td>
+    <th width="2%"> {{ row.ARDR }} </td>
+    <th width="2%"> {{ row.ARK }} </td>
+    <th width="2%"> {{ row.AST }} </td>
+    <th width="2%"> {{ row.BAT }} </td>
+    <th width="2%"> {{ row.BCHABC }} </td>
+    <th width="2%"> {{ row.BCHSV }} </td>
+    <th width="2%"> {{ row.BNB }} </td>
+    <th width="2%"> {{ row.BLZ }} </td>
+    <th width="2%"> {{ row.BTT }} </td>
+    <th width="2%"> {{ row.BTS }} </td>
+    <th width="2%"> {{ row.CND }} </td>
+    <th width="2%"> {{ row.DCR }} </td>
+    <th width="2%"> {{ row.EOS }} </td>
+    <th width="2%"> {{ row.ETH }} </td>
+    <th width="2%"> {{ row.GVT }} </td>
+    <th width="2%"> {{ row.IOTA }} </td>
+    <th width="2%"> {{ row.KNC }} </td>
+    <th width="2%"> {{ row.KMD }} </td>
+    <th width="2%"> {{ row.LTC }} </td>
+    <th width="2%"> {{ row.MANA }} </td>
+    <th width="2%"> {{ row.NANO }} </td>
+    <th width="2%"> {{ row.NAV }} </td>
+    <th width="2%"> {{ row.NEO }} </td>
+    <th width="2%"> {{ row.POLY }} </td>
+    <th width="2%"> {{ row.QTUM }} </td>
+    <th width="2%"> {{ row.RLC  }} </td>
+    <th width="2%"> {{ row.RVN }} </td>
+    <th width="2%"> {{ row.SC }} </td>
+    <th width="2%"> {{ row.SNT }} </td>
+    <th width="2%"> {{ row.STRAT }} </td>
+    <th width="2%"> {{ row.TRX }} </td>
+    <th width="2%"> {{ row.WAVES }} </td>
+    <th width="2%"> {{ row.XLM }} </td>
+    <th width="2%"> {{ row.XMR }} </td>
+    <th width="2%"> {{ row.XRP }} </td>
+    <th width="2%"> {{ row.XVG }} </td>
+    <th width="2%"> {{ row.ZRX }} </td>
+    <th width="2%"> {{ row.XZC }} </td>
+    <th width="5%"> {{ row.TIME }} </td>
+</tr>
+{% endfor %}
+{% endif %}
+
+</tbody></table>
+
+
+
+<<!-- Table striped bordered hover variant="dark">
+  <thead>
+    <tr>
+      <th>#</th>
+      <th>First Name</th>
+      <th>Last Name</th>
+      <th>Username</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>1</td>
+      <td>Mark</td>
+      <td>Otto</td>
+      <td>@mdo</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>Jacob</td>
+      <td>Thornton</td>
+      <td>@fat</td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td colSpan="2">Larry the Bird</td>
+      <td>@twitter</td>
+    </tr>
+  </tbody>
+</Table>; -->
